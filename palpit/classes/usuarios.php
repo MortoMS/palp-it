@@ -15,9 +15,9 @@
 		}
 
 		//Credenciais de acesso BD
-		define('HOST', 'localhost');
+		define('HOST', 'database');
 		define('USER', 'root');
-		define('PASS', '');
+		define('PASS', 'root');
 		define('DBNAME', 'palpit');
 
   		try{

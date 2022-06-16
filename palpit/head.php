@@ -21,18 +21,18 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"  rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons"  rel="stylesheet">
   <script src="jquery-3.6.0.min.js"></script>
-  <link rel="stylesheet" href="./assets/css/base/base.css">
-  <link rel="stylesheet" href="./assets/css/componentes/cartao.css">
-  <link rel="stylesheet" href="./assets/css/componentes/inputs.css">
-  <link rel="stylesheet" href="./assets/css/componentes/botao.css">
-  <link rel="stylesheet" href="./assets/css/perfil.css">
-  <link rel="stylesheet" href="./assets/css/erro.css">
-  <link rel="stylesheet" href="./assets/css/cabecalho.css">
-  <link rel="stylesheet" href="./assets/css/envio.css">
-  <link rel="stylesheet" href="./assets/css/login.css">
-  <link rel="stylesheet" href="./assets/css/post.css">
-  <link rel="stylesheet" href="./assets/css/base/padding.css">
-  <link rel="stylesheet" href="./assets/css/base/margin.css">
+  <link rel="stylesheet" href="public/assets/css/base/base.css">
+  <link rel="stylesheet" href="public/assets/css/componentes/cartao.css">
+  <link rel="stylesheet" href="public/assets/css/componentes/inputs.css">
+  <link rel="stylesheet" href="public/assets/css/componentes/botao.css">
+  <link rel="stylesheet" href="public/assets/css/perfil.css">
+  <link rel="stylesheet" href="public/assets/css/erro.css">
+  <link rel="stylesheet" href="public/assets/css/cabecalho.css">
+  <link rel="stylesheet" href="public/assets/css/envio.css">
+  <link rel="stylesheet" href="public/assets/css/login.css">
+  <link rel="stylesheet" href="public/assets/css/post.css">
+  <link rel="stylesheet" href="public/assets/css/base/padding.css">
+  <link rel="stylesheet" href="public/assets/css/base/margin.css">
 
   <title>Palp-it</title>
   <script>

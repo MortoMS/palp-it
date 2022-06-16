@@ -1,4 +1,17 @@
+# php Error
 php-error.log
-/palpit/assets/img/tatil/
-/palpit/assets/img/visual/
-/palpit/assets/img/perfil/
+
+# Image for all user
+palpit/assets/img/tatil/*
+palpit/assets/img/visual/*
+palpit/assets/img/perfil/*
+palpit/assets/img/publicacoes/*
+
+# gitkeep
+!palpit/assets/img/perfil/.gitkeep
+!palpit/assets/img/visual/.gitkeep
+!palpit/assets/img/tatil/.gitkeep
+!palpit/assets/img/publicacoes/.gitkeep
+
+# vendor
+palpit/vendor

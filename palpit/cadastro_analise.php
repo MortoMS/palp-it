@@ -59,10 +59,10 @@ if(isset($_POST['nome'])){
 									<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 									<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
 									<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
-									<link rel="stylesheet" href="./assets/css/base/base.css">
-									<link rel="stylesheet" href="./assets/css/componentes/cartao.css">
-									<link rel="stylesheet" href="./assets/css/componentes/inputs.css">
-									<link rel="stylesheet" href="./assets/css/componentes/botao.css">
+									<link rel="stylesheet" href="public/assets/css/base/base.css">
+									<link rel="stylesheet" href="public/assets/css/componentes/cartao.css">
+									<link rel="stylesheet" href="public/assets/css/componentes/inputs.css">
+									<link rel="stylesheet" href="public/assets/css/componentes/botao.css">
 								</head>
 								<body>
 									<main class="center container-xs">
