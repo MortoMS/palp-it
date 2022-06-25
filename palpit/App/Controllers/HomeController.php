@@ -8,7 +8,7 @@ use App\Providers\ViewProvider as View;
 
 class HomeController
 {
-    public function index(Request $request, Response $response)
+    public static function index(Request $request, Response $response)
     {
         return $response->view(
             'layout.defaultLayout',

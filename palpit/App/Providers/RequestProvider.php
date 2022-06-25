@@ -46,21 +46,17 @@ class RequestProvider
     public static function group(string $prefix, callable $group, array $middlewares = [])
     {
         if (count($middlewares) > 0) {
-            foreach ($middlewares as $middleware) {
-                self::setMiddleware($middleware);
-            }
+            self::setMiddleware($middlewares);
         }
 
-        self::$prefix = $prefix;
+        self::$prefix .= $prefix;
 
         call_user_func($group, self::class);
 
-        self::$prefix = substr(0, strlen(self::$prefix) - strlen($prefix));
+        self::$prefix = substr(self::$prefix, 0, strlen(self::$prefix) - strlen($prefix));
 
         if (count($middlewares) > 0) {
-            foreach (array_keys($middlewares) as $middleware) {
-                self::removeMiddleware($middleware);
-            }
+            self::removeMiddleware(array_keys($middlewares));
         }
     }
  
@@ -191,11 +187,11 @@ class RequestProvider
             }
         }
 
-        if (array_search($index, $_POST) !== false) {
+        if (array_key_exists($index, $_POST) !== false) {
             return $_POST[$index];
         }
 
-        if (array_search($index, $_GET) !== false) {
+        if (array_key_exists($index, $_GET) !== false) {
             return $_GET[$index];
         }
 

@@ -3,6 +3,11 @@
 @import url(_reset.css);
 @import url(_variaveis.css);
 
+html, body, main { 
+	width: 100%!important;
+	height: 100%!important;
+}
+
 body {
 	background-color: var(--azul-5);
 	color: var(--cinza-1);

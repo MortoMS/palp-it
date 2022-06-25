@@ -9,7 +9,7 @@ class DatabaseProvider
 {
     private static $instance;
 
-    public static function getInstance()
+    public static function getInstance(): PDO
     {
         if (!isset(self::$instance)) {
             self::createDatabaseConnection();
@@ -26,7 +26,7 @@ class DatabaseProvider
         self::$instance = new PDO(
             (
                 "mysql:host={$data['DB_HOST']};".
-                "port={$data['DB_PORT']}".
+                "port={$data['DB_PORT']};".
                 "dbname={$data['DB_DATABASE']}"
             ),
             $data['DB_USER'],

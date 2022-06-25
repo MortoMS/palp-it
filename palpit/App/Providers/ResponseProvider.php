@@ -69,6 +69,13 @@ class ResponseProvider
         return $this;
     }
 
+    public function redirect(string $url = '/')
+    {
+        http_response_code(301);
+
+        header('Location: ' . $url);
+    }
+
     public function render()
     {
         http_response_code($this->statusCode);
