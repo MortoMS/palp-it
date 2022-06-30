@@ -57,7 +57,7 @@
         </form>
         <section class="cartao__container cartao-xs">
             <p>Ainda não é membro?</p> 
-            <a href="cadastro.php" class="link-container link-color link-externo">
+            <a href="cadastro" class="link-container link-color link-externo">
                 Cadastre-se já
             </a>
         </section>

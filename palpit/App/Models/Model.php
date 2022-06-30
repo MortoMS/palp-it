@@ -84,6 +84,8 @@ class Model
 
         if (count($result->where) > 0) {
             $result->where = "WHERE " . implode(" AND ", $result->where);
+        } else {
+            $result->where = "";
         }
 
         return $result;
@@ -131,8 +133,10 @@ class Model
         
         $stmt = $conn->prepare($sql);
 
-        foreach ($where->values as $index => $value) {
-            $stmt->bindValue($index, $value);
+        if (count($where->values) > 0) {
+            foreach ($where->values as $index => $value) {
+                $stmt->bindValue($index, $value);
+            }
         }
 
         $stmt->setFetchMode(\PDO::FETCH_ASSOC);

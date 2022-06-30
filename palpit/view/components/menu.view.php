@@ -25,7 +25,7 @@ use App\Providers\AuthProvider as Auth;
                             <a href="login" class="botao--container">Entrar</a>
                         </li>
                         <li>
-                            <a href="cadastro.php" class="botao--container border">Criar conta</a>
+                            <a href="cadastro" class="botao--container border">Criar conta</a>
                         </li>
                     </ul>
                 </nav>
