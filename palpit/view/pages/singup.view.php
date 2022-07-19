@@ -19,6 +19,11 @@
                             required
                         />
                     </div>
+                    <div class="mensagem-erro">
+                        <?php if (array_key_exists("nome", $errors)): ?>
+                            <span><?= $errors['nome'][0] ?></span>
+                        <?php endif; ?>
+                    </div>
                     <div class="input-container">
                         <input 
                             name="email" 
@@ -28,6 +33,11 @@
                             placeholder="Email" 
                             required
                         />
+                    </div>
+                    <div class="mensagem-erro">
+                        <?php if (array_key_exists("email", $errors)): ?>
+                            <span><?= $errors['email'][0] ?></span>
+                        <?php endif; ?>
                     </div>
                     <div class="input-container">
                         <input 
@@ -40,6 +50,11 @@
                             required
                         />
                     </div>
+                    <div class="mensagem-erro">
+                        <?php if (array_key_exists("senha", $errors)): ?>
+                            <span><?= $errors['senha'][0] ?></span>
+                        <?php endif; ?>
+                    </div>
                     <div class="input-container">
                         <input 
                             name="senha" 
@@ -51,6 +66,11 @@
                             required
                         />
                     </div>
+                    <div class="mensagem-erro">
+                        <?php if (array_key_exists("senha", $errors)): ?>
+                            <span><?= $errors['senha'][0] ?></span>
+                        <?php endif; ?>
+                    </div>
                     <div class="input-container">
                         <select class="option input input-full" name="area">
                             <option disabled selected>Selecione uma Área de interesse</option>
@@ -59,10 +79,20 @@
                             <?php endforeach; ?>
                         </select>
                     </div>
+                    <div class="mensagem-erro">
+                        <?php if (array_key_exists("area", $errors)): ?>
+                            <span><?= $errors['area'][0] ?></span>
+                        <?php endif; ?>
+                    </div>
                     <label class="checkbox--label ">
                         <input type="checkbox" name="receber"/>
                         Aceito receber notificação por email quando um novo gráfico da minha área de interesse for postado.
                     </label>
+                    <div class="mensagem-erro">
+                        <?php if (array_key_exists("receber", $errors)): ?>
+                            <span><?= $errors['receber'][0] ?></span>
+                        <?php endif; ?>
+                    </div>
                     <button type="submit" class="botao--container botao--primario width-full">Cadastrar</button>
                 </form>
             </div>
